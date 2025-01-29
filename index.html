@@ -99,6 +99,48 @@
                 font-size: 1rem;
                 padding: 0.7rem 1.5rem;
             }
+                    .social-links {
+            position: fixed;
+            bottom: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .social-icon {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.8rem;
+                letter-spacing: 4px;
+            }
+
+            .boarding-text {
+                font-size: 2.5rem;
+            }
+
+            .countdown {
+                font-size: 1.8rem;
+            }
+
+            .countdown-item {
+                margin: 0 0.8rem;
+            }
+
+            .social-icon {
+                font-size: 1.2rem;
+                margin: 0 0.5rem;
+            }
         }
     </style>
 </head>
@@ -115,7 +157,14 @@
     </div>
     
     <button class="cta-button mt-4"> SkyPassports is boarding soon – are you ready?</button>
-    
+        <!-- Social Links -->
+    <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-snapchat"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    </div>
     <script>
         const countdown = () => {
             const countDate = new Date('2025-03-01T00:00:00').getTime();
